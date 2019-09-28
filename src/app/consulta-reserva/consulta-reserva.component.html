@@ -1,0 +1,24 @@
+
+  <div>
+    <h1 class="h2">Lista</h1>
+  </div>
+  <div>
+    <table border ="1">
+      <tr>
+        <th>Cedula</th>
+        <th> Nombre</th>
+        <th>Tipo de Silla</th>
+        <th>Numero de Silla</th>
+        <th></th>
+        <th></th>
+  </tr>
+  <tr *ngFor="let reserva of reservas">
+    <td>{{reserva.id}}</td>
+    <td>{{reserva.Nombre}}</td>
+    <td>><span *ngIf="reserva.TipoSilla===true;"><b>Tipo</b></span> </td>
+    <td>{{reserva.NumeroSilla}}</td>
+  </tr>
+    </table>
+  </div>
+  
+  

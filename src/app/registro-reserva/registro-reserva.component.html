@@ -1,0 +1,31 @@
+
+  <div class="container">
+  <div>
+    <label>Id:
+      <input [(ngModel)]="reserva.id" placeholder="Digite la cedula" type="text"/>
+    </label>
+  </div>
+
+  <div>
+      <label>Nombre:
+        <input [(ngModel)]="reserva.Nombre" placeholder="Digite el nombre" type="text"/>
+      </label>
+    </div>
+
+    <div>
+        <label>TipoSilla:
+          <input type="checkbox" [(ngModel)]="reserva.TipoSilla">
+        </label>
+      </div>
+
+      <div>
+          <label>NumeroSilla:
+            <input [(ngModel)]="reserva.NumeroSilla" placeholder="Digite el numero" type="text"/>
+          </label>
+        </div>
+  
+      <div>
+      <button (click)="add()" class="btn btn.primary"> Agregar</button>
+    </div>
+  </div>
+  
